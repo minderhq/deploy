@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Minder platform (core)
+    url: https://github.com/minderhq/minder
+    about: If this is about the product itself rather than deployment/distribution, it may belong there instead.
