@@ -1,0 +1,39 @@
+name: New distribution target request
+description: Request Minder be packaged for a specific self-host platform or format
+title: "[distribution]: "
+type: Feature
+labels: ["status:triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repo is pre-buildable for most distribution formats until
+        [minder#1253](https://github.com/minderhq/minder/issues/1253) (registry-based image
+        publishing) ships — this issue registers interest and requirements so the right
+        thing gets built once that lands. See ROADMAP.md for the current phased plan.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Target platform/format
+      options:
+        - Umbrel
+        - CasaOS
+        - Runtipi
+        - Coolify
+        - Kubernetes / Helm
+        - Plain docker-compose
+        - Other (describe below)
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this platform?
+      description: What's your use case? How many people do you think this would help?
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Platform-specific requirements you know of
+      description: e.g. manifest format constraints, resource limits, required metadata fields for that platform's app store.

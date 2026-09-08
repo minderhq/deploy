@@ -1,0 +1,4 @@
+# Project style: prose lines wrap naturally rather than at a fixed column.
+# See CONTRIBUTING.md — this repo favors readable prose over hard-wrapped lines.
+default: true
+MD013: false
