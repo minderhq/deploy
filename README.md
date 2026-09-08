@@ -2,7 +2,7 @@
 
 Deployment & distribution artifacts for **Minder**: docker-compose bundles, a Helm chart, and self-hosted app-store listings (Umbrel / CasaOS / Runtipi / Coolify).
 
-Status: **planned** — tracked in [minderhq/minder#1259](https://github.com/minderhq/minder/issues/1259).
+Status: **planned** — tracked in [minderhq/minder#1246](https://github.com/minderhq/minder/issues/1246).
 
 > Note: under the closed-core model these manifests reference the **private** core images, so self-hosting is **licensed** (not open community self-host).
 
@@ -10,7 +10,7 @@ Status: **planned** — tracked in [minderhq/minder#1259](https://github.com/min
 
 This repo is scaffolded ahead of most of its content being buildable. See
 [ROADMAP.md](ROADMAP.md) for the full plan; tracked upstream in
-[minderhq/minder#1259](https://github.com/minderhq/minder/issues/1259) and
+[minderhq/minder#1246](https://github.com/minderhq/minder/issues/1246) and
 [minderhq/minder#1253](https://github.com/minderhq/minder/issues/1253).
 
 - **Phase 1 — Compose bundles** (`compose-bundles/`): blocked on
