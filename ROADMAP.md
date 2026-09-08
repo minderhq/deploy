@@ -7,7 +7,7 @@ so the plan is visible even while most of the work waits.
 
 Tracked upstream:
 
-- [minderhq/minder#1259](https://github.com/minderhq/minder/issues/1259) — distribution
+- [minderhq/minder#1246](https://github.com/minderhq/minder/issues/1246) — distribution
   epic (app-store listings + Helm chart).
 - [minderhq/minder#1253](https://github.com/minderhq/minder/issues/1253) — move
   first-party images to a registry (build-push in CI, pull-on-deploy). This is the hard
