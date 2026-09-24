@@ -19,7 +19,13 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@21c1be1b93ad9ed58fa840aacc3f279cde2a72ff  # v24.2.0
         with:
           globs: "**/*.md"
+      - name: Set up uv
+        # SHA-pinned like the markdownlint action above. No Python project
+        # here, so the cache key follows this workflow file (the tool list).
+        uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+        with:
+          enable-cache: true
+          cache-dependency-glob: .github/workflows/lint.yml
       - name: Lint YAML
         run: |
-          pip install yamllint
-          yamllint -d "{extends: default, rules: {line-length: disable, document-start: disable}}" .github/
+          uvx yamllint -d "{extends: default, rules: {line-length: disable, document-start: disable}}" .github/
