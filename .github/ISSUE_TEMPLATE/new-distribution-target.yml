@@ -8,8 +8,8 @@ body:
     attributes:
       value: |
         This repo is pre-buildable for most distribution formats until
-        [minder#1253](https://github.com/minderhq/minder/issues/1253) (registry-based image
-        publishing) ships — this issue registers interest and requirements so the right
+        registry-based image publishing (tracked in the private core repo)
+        ships — this issue registers interest and requirements so the right
         thing gets built once that lands. See ROADMAP.md for the current phased plan.
   - type: dropdown
     id: platform

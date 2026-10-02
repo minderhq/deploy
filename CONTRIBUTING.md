@@ -2,8 +2,7 @@
 
 This repo is **pre-buildable**: most of its planned content (compose bundles, Helm
 chart, app-store listings — see [ROADMAP.md](ROADMAP.md)) is blocked on
-[minderhq/minder#1253](https://github.com/minderhq/minder/issues/1253) (registry-based
-image publishing) landing in the private core repo. Until that ships, there is no
+registry-based image publishing landing in the private core repo. Until that ships, there is no
 published image for any manifest here to reference.
 
 ## What's useful to contribute right now

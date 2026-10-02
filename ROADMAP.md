@@ -5,12 +5,10 @@ bundles, a Helm chart, and self-hosted app-store listings. Almost all of it is b
 one prerequisite upstream in the private core repo — this document lays out the phases
 so the plan is visible even while most of the work waits.
 
-Tracked upstream:
+Tracked upstream, in the private core repo:
 
-- [minderhq/minder#1246](https://github.com/minderhq/minder/issues/1246) — distribution
-  epic (app-store listings + Helm chart).
-- [minderhq/minder#1253](https://github.com/minderhq/minder/issues/1253) — move
-  first-party images to a registry (build-push in CI, pull-on-deploy). This is the hard
+- The distribution epic (app-store listings + Helm chart).
+- Move first-party images to a registry (build-push in CI, pull-on-deploy). This is the hard
   gate: app stores and compose bundles pull published images, they don't build from
   source.
 
@@ -20,7 +18,7 @@ Tracked upstream:
 a self-hoster can `docker compose up` against without cloning the private core repo or
 building anything locally.
 
-**Blocked on:** [minder#1253](https://github.com/minderhq/minder/issues/1253). Today,
+**Blocked on:** registry-based image publishing in the core repo. Today,
 Minder's own compose file builds all first-party service images from source
 (`context: ../` + `dockerfile: src/services/*/Dockerfile`) — there is no published image
 to reference yet. Once CI in the core repo builds and pushes `minder/<name>:<tag>` to a
@@ -67,7 +65,7 @@ platform, not by this repo.
 
 ## How to help
 
-Since Phases 1–3 all wait on [minder#1253](https://github.com/minderhq/minder/issues/1253),
+Since Phases 1–3 all wait on registry-based image publishing,
 the most useful contribution right now isn't code — there's nothing to build against
 yet. If you'd like a specific platform or format supported, or have requirements for
 one already listed above, please file a
